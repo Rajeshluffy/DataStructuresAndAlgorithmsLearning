@@ -5,16 +5,17 @@ import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
 public class MoveZeroes {
-	/*
+	/**
+	 * A solution to the Move Zeroes problem.
 	 * 
-	 * 
-	 * 
+	 * @author rajesh
+	 * @see <a href="https://leetcode.com/problems/move-zeroes/description/">Move Zeroes - LeetCode</a>
 	 */
 
 
 	/*pseudo code
 	 * 
-	 * intialise two pointer
+	 * Initialize two pointer
 	 * second pointer less nums.length 
 	 *  	check nums second pointer not equal to zero
 	 *  		swap and increase pointer

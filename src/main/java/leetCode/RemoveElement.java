@@ -4,6 +4,13 @@ import org.junit.Test;
 
 public class RemoveElement {
 
+	// https://leetcode.com/problems/matrix-diagonal-sum/description/
+	/**
+	 * A solution to the Remove Element problem.
+	 * 
+	 * @author rajesh
+	 * @see <a href="https://leetcode.com/problems/remove-element/description/"> Remove Element - LeetCode</a>
+	 */
 
 	/*
 	 * initialize the left and right variable

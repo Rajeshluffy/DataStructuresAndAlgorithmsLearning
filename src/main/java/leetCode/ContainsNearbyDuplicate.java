@@ -2,9 +2,15 @@ package leetCode;
 
 import java.util.HashMap;
 import org.junit.Test;
-// https://leetcode.com/problems/contains-duplicate-ii/description/
+
+/**
+* A solution to the Contains Near by Duplicate problem.
+* 
+* @author rajesh
+* @see <a href="// https://leetcode.com/problems/contains-duplicate-ii/description/">Contains Near by Duplicate - LeetCode</a>
+*/
 public class ContainsNearbyDuplicate {
-	//	- Initialise hashmap
+	//	- Initialize hashmap
 	//	- iterate the array and load entries
 	//	- before adding check if nums[i] is already there and i-map.get(nums[i])<=k
 	//		- if yes return true

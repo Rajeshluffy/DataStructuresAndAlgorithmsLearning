@@ -5,6 +5,12 @@ import java.util.Arrays;
 import org.junit.Test;
 
 public class SortColors {
+	/**
+	 * A solution to the Sort Colors problem.
+	 * 
+	 * @author rajesh
+	 * @see <a href="https://leetcode.com/problems/sort-colors/description/">Sort Colors - LeetCode</a>
+	 */
 	public void sortColors(int[] nums) {
 //		2,0,2,1,1,0
 		int left=0;

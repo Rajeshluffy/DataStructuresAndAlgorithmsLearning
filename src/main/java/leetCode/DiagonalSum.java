@@ -1,7 +1,6 @@
 package leetCode;
 
 import org.junit.Test;
-// https://leetcode.com/problems/matrix-diagonal-sum/description/
 /**
  * A solution to the Matrix Diagonal Sum problem.
  * 

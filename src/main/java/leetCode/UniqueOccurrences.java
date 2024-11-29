@@ -6,7 +6,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.junit.Test;
-
+/**
+ * A solution to Unique Occurrences problem.
+ * 
+ * @author rajesh
+ * @see <a href="https://leetcode.com/problems/unique-number-of-occurrences/description/">Unique Occurrences - LeetCode</a>
+ */
 public class UniqueOccurrences {
 /*
  * Initialize the map

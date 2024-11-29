@@ -3,7 +3,12 @@ package leetCode;
 
 import org.junit.Test;
 
-
+/**
+* A solution to the Trapping Water problem.
+* 
+* @author rajesh
+* @see <a href="https://leetcode.com/problems/trapping-rain-water/description/">Trapping Water - LeetCode</a>
+*/
 
 public class TrappingWater {
 	public int storeWater(int[] nums)  {
