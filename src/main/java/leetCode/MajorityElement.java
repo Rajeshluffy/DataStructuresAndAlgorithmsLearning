@@ -6,26 +6,26 @@ import java.util.Map;
 import org.junit.Test;
 
 /**
- * A solution to check If Majority Element problem.
+ * A solution to the If Majority Element problem.
  * 
  * @author rajesh
  * @see <a href="https://leetcode.com/problems/majority-element/description/">Majority Element - LeetCode</a>
  */
 
-/*
- * Create a map 
- * check the array contain one element
- * 		yes return the first number 
- * iterate and find the individual number occurrence 
- * 	if the element contains in the map
- * 			calculate the occurrence
- * 				if the occurrence is greater the half the array length
- * 					return the 
- * 	else
- * 		add it in the map
- * 
- */
 public class MajorityElement {
+	/*
+	 * Create a map 
+	 * check the array contain one element
+	 * 		yes return the first number 
+	 * iterate and find the individual number occurrence 
+	 * 	if the element contains in the map
+	 * 			calculate the occurrence
+	 * 				if the occurrence is greater the half the array length
+	 * 					return the 
+	 * 	else
+	 * 		add it in the map
+	 * 
+	 */
 	public int majorityElement(int[] nums) {
 		HashMap<Integer, Integer> map = new HashMap<>();
 		if (nums.length==1) {
