@@ -1,74 +1,41 @@
 package leetCode;
 
-import java.util.HashMap;
 
 import org.junit.jupiter.api.Test;
-
+/**
+ * A solution to check If Pangram problem.
+ * 
+ * @author rajesh
+ * @see <a href="https://leetcode.com/problems/check-if-the-sentence-is-pangram/">check If Pangram - LeetCode</a>
+ */
 public class BinarySubarraysWithSum {
-	public int numSubarraysWithSum(int[] nums, int goal) {
 
 
-		/*
-		 * 
-		 * iterate till p1 exhaust
-		 * 	iterate till p2 exhaust
-		 *		if nums p1 and nums p2 == goal
-		 * 			increase the max
-		 * 		increase p2
-		 * 	increase p1
-		 * 	assign p1 value to p2
-		 */
-		//		HashMap<Integer, Integer> prefixSumCount = new HashMap<>();
-		//		prefixSumCount.put(0, 1);
-		//
-		//		int sum = 0, count = 0;
-		//		for (int i = 0; i < nums.length; i++) {
-		//
-		//			sum += nums[i];
-		//			// Check if (sum - S) exists in the map
-		//			if (prefixSumCount.containsKey(sum - goal)) {
-		//				count += prefixSumCount.get(sum - goal);
-		//			}
-		//
-		//			prefixSumCount.put(sum, prefixSumCount.getOrDefault(sum, 0) + 1);
-		//		}
-		//
-		//		return count;
-		//	}
+		public int numSubarraysWithSum(int[] nums, int goal) {
 
-
-		int p1=0,p2=0,exactSumCounter=0;
-		int sum =0 ;
-		while(p2<nums.length) {
-			sum+=nums[p2];
-			// Expand the window 
-
-			while (sum >goal) {
-				// Shrink the window size
-				sum-=nums[p1];
-				p1++;
-			}
-			//			maxSubArrayCounter += p2-p1 + 1;
-
-
-			// Count subarrays with the exact sum
-			if (sum == goal) {
-				exactSumCounter++;
-				// Explore smaller windows within the range
-				int temp = p1;
-				while (temp < p2 && nums[temp] == 0) {
-					exactSumCounter++;
-					temp++;
-				}
-			}
-			p2++;
+			return helperMethood(nums,goal) -helperMethood(nums,goal-1);
 		}
+		public int helperMethood(int[] nums, int goal) {
+			if(goal<0) {
+				return 0;
 
+			}
+			int p1=0,p2=0,sum=0,count=0;
+			while(p2<nums.length) {
+				sum += nums[p2];
+				//expand the window
+				while(sum>goal) {
+					//shrink the window
+					sum -= nums[p1];
+					p1++;
+				}
+				count += p2-p1+1;
+				
+				p2++;
+			}
 
-
-		return exactSumCounter;
-
-	}
+			return count;
+		}
 	
 
 	@Test
