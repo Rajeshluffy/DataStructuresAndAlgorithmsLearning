@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
  * A solution to check If Pangram problem.
  * 
  * @author rajesh
- * @see <a href="https://leetcode.com/problems/check-if-the-sentence-is-pangram/">check If Pangram - LeetCode</a>
+ * @see <a href="https://leetcode.com/problems/binary-subarrays-with-sum/">check If Pangram - LeetCode</a>
  */
 public class BinarySubarraysWithSum {
 

@@ -33,7 +33,7 @@ public class SearchInsert {
 			int mid =(left + right) /2;
 			
 			if(nums[mid] >= target ) {
-//				ans=mid;
+				ans=mid;
 				
 				right =mid-1;
 
@@ -41,7 +41,7 @@ public class SearchInsert {
 				left = mid+1;
 			}
 		}
-		return left;
+		return ans;
 	}
 	
 	@Test

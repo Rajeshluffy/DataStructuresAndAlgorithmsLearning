@@ -34,7 +34,6 @@ public class UniqueOccurrences {
 	
 		for (int i = 0; i < arr.length; i++) {
 			map.put(arr[i],map.getOrDefault(arr[i],0)+1);
-
 		}
 		Set<Integer> keySet = map.keySet();
 		Collection<Integer> values = map.values();
