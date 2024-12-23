@@ -12,6 +12,29 @@ public class SearchRange {
 	 * @see <a href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/">Find First and Last Position of Element in Sorted Array
  			- LeetCode</a>
 	 */
+	
+	/*
+	 * Initialize the variable low,high and bound=-1
+	 * 
+	 * 		iterate high less than low
+	 * 			Initiate mid = low+high /2
+	 * 			if nums[mid]==target
+	 * 				bound = mid;
+	 * 				if finding the first Position true
+	 * 					move high index mid -1
+	 * 				else
+	 * 					move the low index mid+1
+	 * 			
+	 * 			if(nums[low]<nums[mid])
+	 * 				low =mid+1
+	 * 			else
+	 * 				high=mid-1;
+	 * 					
+	 * 		return the index
+	 * 
+	 * 
+	 */
+		//Time and space complexity O(logn) and O(1)
 	public int[] searchRange(int[] nums, int target) {
 		
 		return  new int[] {elementFinder(nums, target, true),elementFinder(nums, target, false)};
@@ -30,7 +53,7 @@ public class SearchRange {
 				}else  {
 					low = mid + 1;  
 				}
-			}else if(nums[mid]<target) {
+			}else if(nums[low]<nums[mid]) {
 				low=mid+1;
 			}else {
 				high=mid-1;

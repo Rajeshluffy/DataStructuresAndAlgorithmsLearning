@@ -17,7 +17,7 @@ public class PlatformTime {
 		 * 		decrease the platform
 		 * 		increase the p2++
 		 * 
-		 *  update the highest plaform
+		 *  update the highest platform
 		 */
 
 		Arrays.sort(arr);
