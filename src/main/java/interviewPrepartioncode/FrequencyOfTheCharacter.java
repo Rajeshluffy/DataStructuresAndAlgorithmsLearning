@@ -1,12 +1,5 @@
 package interviewPrepartioncode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
 import org.junit.Test;
 
 public class FrequencyOfTheCharacter {
@@ -32,6 +25,7 @@ public class FrequencyOfTheCharacter {
 		}
 
 		// Print frequencies of characters
+		System.out.println(freq.length);
 		System.out.println("Character frequencies:");
 		for (int i = 0; i < freq.length; i++) {
 			if (freq[i] > 0) { // Only print characters that appear in the string

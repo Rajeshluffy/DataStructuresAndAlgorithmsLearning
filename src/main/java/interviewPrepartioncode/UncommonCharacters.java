@@ -3,6 +3,7 @@ package interviewPrepartioncode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -20,6 +21,8 @@ public class UncommonCharacters {
 	 * return the new List
 	 * 				
 	 */
+
+	
 	public String uncommonCharacters(String str1, String str2) {
 
 
@@ -28,7 +31,7 @@ public class UncommonCharacters {
 		characterFilter(str2,str1,unqiueCharacterSet);
 		List<String> sortedList = new ArrayList<>(unqiueCharacterSet);
 		Collections.sort(sortedList);
-        String result = String.join(" ", sortedList);
+		String result = String.join(" ", sortedList);
 
 		return result;
 
