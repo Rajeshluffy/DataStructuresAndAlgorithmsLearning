@@ -12,16 +12,14 @@ public class KThSmallestNumber {
 		for (int i = 0; i < k; i++) {
 			pq.add(nums[i]);
 		}
-		int ans=0;
+	
 		for (int i = k; i < nums.length; i++) {
 			if(nums[i]<pq.peek()) {
 				pq.poll();
-				ans=nums[i];
-				pq.add(ans);
-
+				pq.add(nums[i]);
 			}
 		}
-		return ans;
+		return pq.peek();
 
 	}
 
@@ -30,6 +28,5 @@ public class KThSmallestNumber {
 		int[] nums= {3,16,4,8,5,12};
 		int k=3;
 		System.out.println(smalestNumber(nums,k));
-
 	}
 }

@@ -1,13 +1,13 @@
-package interviewPrepartioncode;
+	package interviewPrepartioncode;
 
 import java.util.PriorityQueue;
 
 import org.junit.Test;
 
 public class KThLargerstNumber {
-
+// o(nlogk) o(k)
 	public int largestNumber(int[] nums, int k) {
-		PriorityQueue<Integer> pq = new PriorityQueue<>();
+		PriorityQueue<Integer> pq = new PriorityQueue<>((a,b)->b-a);
 		for (int i = 0; i < k; i++) {
 			pq.add(nums[i]);
 		}

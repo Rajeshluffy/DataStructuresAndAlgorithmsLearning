@@ -25,18 +25,20 @@ else
 - left++
 
 	 */
+	
+
 
     public int[] twoSum(int[] numbers, int target) {
 		int left=0;
 		int right=numbers.length-1;
 
-		while (left < right) {
+		while (left < right) { //(o N)
 			int temp =numbers[left]+numbers[right]; 
-			if (temp==target) {
+			if (temp==target) { //o(1)
 				return new int[] {left + 1, right + 1}; 
-			}else if (temp<target) {
+			}else if (temp<target) { //o(1)
 				left++;
-			}else {
+			}else { //o(1)
 				right--;
 			}
 		}

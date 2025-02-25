@@ -1,5 +1,7 @@
 package leetCode;
 
+import java.util.Iterator;
+
 import org.junit.Test;
 /**
  * A solution to the Matrix Diagonal Sum problem.
@@ -48,12 +50,29 @@ find the sum of first row ()
 	}
 
 
+	public  int DiagonalSum(int[][] mat) {
+
+		int sum=0;
+		int n=mat.length;
+		for (int i = 0; i < n; i++) {  //O(n)
+			sum+=mat[i][i];
+			sum+=mat[i][n - i- 1];
+		}
+		if(n%2==0) {
+			sum-=mat[n/2][n/2];
+		}
+
+
+		return sum;
+	}
 
 
 	@Test
 	public void testData1() {
 		int [][] mat = {{1,2,3}, {4,5,6},{7,8,9}};
-		System.out.println(diagonalSum(mat));
+		//		System.out.println(diagonalSum(mat));
+		System.out.println(DiagonalSum(mat));
+
 	} 
 	@Test
 	public void testData2() {
@@ -61,7 +80,7 @@ find the sum of first row ()
 		System.out.println(diagonalSum(mat));
 
 	} 
-	
+
 	@Test
 	public void testData3() {
 		int [][] mat = {{5}};
@@ -74,5 +93,5 @@ find the sum of first row ()
 		System.out.println(diagonalSum(mat));
 
 	} 
-	
+
 }
