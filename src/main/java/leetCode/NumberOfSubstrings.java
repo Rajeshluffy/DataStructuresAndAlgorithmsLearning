@@ -12,17 +12,30 @@ public class NumberOfSubstrings {
 	 * @author rajesh
 	 * @see <a href="https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/">number of string- LeetCode</a>
 	 */
+
+	/*
+	 * Declare hashtable
+	 *  add the each element
+	 * check all the three  character added in hashtable
+	 * 	iterate the loop
+	 * 		count the  substring
+	 * 		shrink the window
+	 * 
+	 * expand the window
+	 * 
+	 * 
+	 */
 	public int numberOfSubstrings(String s) {
 		Hashtable<Character,Integer> subString = new Hashtable<>();
 		int p1=0,p2=0,count=0;
-		while(p2<s.length()) {
+		while(p2<s.length()) {  //o(N)
 			//Expand
 			subString.put(s.charAt(p2), subString.getOrDefault(s.charAt(p2),0)+1);
 
 			//Shrink
 			while(subString.getOrDefault('a',0)>0 && 
 					subString.getOrDefault('b',0)>0 &&
-					subString.getOrDefault('c',0)>0) {
+					subString.getOrDefault('c',0)>0) { //o(N)
 				count += s.length() - p2;				char charAt = s.charAt(p1);
 				subString.put(charAt, subString.get(charAt)-1);
 				p1++;
@@ -43,7 +56,7 @@ public class NumberOfSubstrings {
 		System.out.println(		numberOfSubstrings(s));
 
 	}
-	
+
 	@Test
 	public void testData2() {
 		String	s = "aaacb";
