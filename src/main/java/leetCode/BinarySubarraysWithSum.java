@@ -43,8 +43,6 @@ public class BinarySubarraysWithSum {
 		int[] nums = {1,0,1,0,1};	
 		int goal =2;
 		System.out.println(numSubarraysWithSum(nums,goal));
-
-
 	}
 	@Test
 	public void testData2() {

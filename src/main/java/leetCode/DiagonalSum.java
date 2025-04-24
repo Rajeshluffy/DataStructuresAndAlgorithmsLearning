@@ -1,7 +1,5 @@
 package leetCode;
 
-import java.util.Iterator;
-
 import org.junit.Test;
 /**
  * A solution to the Matrix Diagonal Sum problem.

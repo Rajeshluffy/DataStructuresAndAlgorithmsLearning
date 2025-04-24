@@ -55,6 +55,7 @@ public class CheckIfPangram {
 			return false;
 	}
 	public boolean checkIfPangram_Using_Set(String sentence) {
+		//O(n) O(1)
 		Set<Integer> set = new HashSet<>();
 
 		if (sentence.length()<26) {

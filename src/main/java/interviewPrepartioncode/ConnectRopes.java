@@ -7,10 +7,10 @@ import org.junit.Test;
 public class ConnectRopes {
 
 	public int minimumRequired(int[] len) {
-		PriorityQueue<Integer> pq = new PriorityQueue<>();
+		PriorityQueue<Integer> pq = new PriorityQueue<>();	
 
-		for (int i = 0; i < len.length; i++) {
-			pq.add(len[i]);
+		for(int temp : len) {
+			pq.add(temp);	
 		}
 
 		int result =0;

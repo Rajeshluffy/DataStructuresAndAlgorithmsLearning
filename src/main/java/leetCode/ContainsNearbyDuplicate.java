@@ -7,7 +7,7 @@ import org.junit.Test;
 * A solution to the Contains Near by Duplicate problem.
 * 
 * @author rajesh
-* @see <a href="// https://leetcode.com/problems/contains-duplicate-ii/description/">Contains Near by Duplicate - LeetCode</a>
+* @see <a href="https://leetcode.com/problems/contains-duplicate-ii/description/">Contains Near by Duplicate - LeetCode</a>
 */
 public class ContainsNearbyDuplicate {
 	//	- Initialize hashmap

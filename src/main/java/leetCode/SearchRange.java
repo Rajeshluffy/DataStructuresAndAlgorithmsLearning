@@ -43,10 +43,10 @@ public class SearchRange {
 	public int elementFinder(int[] nums, int target,boolean isFirst) {
 		int low =0,high=nums.length-1;
 		int bound=-1;
-		while(low<=high) {
+		while(low<=high) { //O(logn)
 			int mid=(low+ high)/2;
 
-			if (nums[mid]==target) {
+			if (nums[mid]==target) {//O(1)
 				bound =mid;
 				if(isFirst) {
 					high = mid - 1;

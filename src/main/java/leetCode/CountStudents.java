@@ -36,7 +36,7 @@ public class CountStudents {
                 rotations = 0; // Reset rotations
             } else {
                 // Student cannot eat, move them to the back
-            	Integer poll = queue.poll();
+            	int poll = queue.poll();
                 queue.offer(poll);
                 rotations++;
             }
