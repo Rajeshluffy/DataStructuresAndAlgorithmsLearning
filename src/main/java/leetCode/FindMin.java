@@ -3,6 +3,12 @@ package leetCode;
 import org.junit.Test;
 
 public class FindMin {
+	/**
+	* A solution to the Find Minimum in Rotated Sorted Array.
+	* 
+	* @author rajesh
+	* @see <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">Find Minimum in Rotated Sorted Array - LeetCode</a>
+	*/
 	public int findMin(int[] nums) {
 		/*
 		 *	check whether array is not rotated

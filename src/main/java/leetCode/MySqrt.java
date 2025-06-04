@@ -9,7 +9,7 @@ public class MySqrt {
 	 * @author rajesh
 	 * @see <a href="https://leetcode.com/problems/sqrtx">SQRT(X) - LeetCode</a>
 	 */
-	
+
 	/*
 	 * Use binary search to find the largest integer M
 
@@ -46,7 +46,7 @@ RETURN RESULT
 		}
 		return result ;
 	}
-	
+
 	@Test
 	public void data1() {
 		int nums = 4;
